@@ -1,0 +1,12 @@
+# wechat-to-medical-ppt 的可选依赖
+#
+# 说明：本技能自带的 scripts/ 三个脚本均为 Python 标准库实现，无需安装任何依赖。
+# 以下依赖仅用于工作流 Step 2「解析补充资料」时抽取 PDF 文本层与整页渲染图表：
+#   - pdfplumber : PDF 文本层抽取（自带 pdfminer.six / pillow 等依赖）
+#   - pypdfium2  : PDF 整页渲染为 PNG（用于截取图 1 / 图 2 等图像版式图表）
+#
+# 安装（推荐使用清华镜像）：
+#   pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+pdfplumber>=0.11.0
+pypdfium2>=5.0.0
